@@ -1,3 +1,10 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +14,12 @@
 }
 
 .box{
+    display: flex;
     border: 1px solid red;
     height: 6vh;
     width: 6vh;
+}
+
+.box.sketch {
+    background-color: yellow;
 }
