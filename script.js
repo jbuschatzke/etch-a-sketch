@@ -21,7 +21,7 @@ function createGrid(gridRow, gridDivs){
 }
 
 function newGame() {
-let grid = +prompt("Create a grid of up to 100 squares", "0-100");
+let grid = +prompt("Create a grid of up to 100 squares", "1-100");
 gridRow = grid;
 gridDivs = grid;
 if (grid <= 100 && grid > 0){
@@ -33,5 +33,6 @@ if (grid <= 100 && grid > 0){
     newGame();
 } else {
     alert("This is not a valid number. Please enter a number between 1 and 100");
+    newGame();
 }
 };
